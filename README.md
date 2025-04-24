@@ -1,6 +1,6 @@
-# Angular Academy Demo RxJS Start
+# Angular Academy Demo RxJS
 
-Starter Project for the RxJS demo of <a href="https://angular.ac" target="_blank">Angular Academy</a>.
+Demo Project for the RxJS Workshop by <a href="https://angular.ac" target="_blank">Angular Academy</a>.
 
 [![Angular Academy](https://www.angularacademy.ca/images/classroom.jpg "Angular Academy")](https://www.angularacademy.ca)
 
@@ -10,7 +10,7 @@ We have a long history of <a href="https://www.angularacademy.ca/world-firsts" t
 
 Visit www.angularacademy.ca for our list of Angular related courses:
 * <a href="https://www.angularacademy.ca/courses/angular-fundamentals-training" target="_blank">Angular Fundamentals</a>
-* <a href="https://www.angularacademy.ca/courses/angular-styling-workshop" target="_blank">Angular Styling Workshop</a>
+* <a href="https://www.angularacademy.ca/courses/angular-signals-training" target="_blank">Angular Signals Workshop</a>
 * <a href="https://www.angularacademy.ca/courses/advanced-angular-training" target="_blank">Advanced Angular</a>
 * <a href="https://www.angularacademy.ca/courses/testing-angular-training" target="_blank">Testing Angular</a>
 * <a href="https://www.angularacademy.ca/courses/angular-rxjs-training" target="_blank">RxJS Workshop</a>
