@@ -2,7 +2,19 @@
   {{ title }}
 </h2>
 
+@if (favouriteAdded$ | async; as latestFavouriteProduct) {
+  <h3>Product {{ latestFavouriteProduct.name }} added to your favourites!</h3>
+}
+
 <div class="right">
+  {{ productsNb$ | async }} products
+
+  @if(filtered$ | async) {
+    (filtered)
+  }
+
+  /
+
   {favourites, plural,
   =0 {no favourite}
   =1 {1 favourite}
@@ -10,11 +22,11 @@
 }
 </div>
 <div>
-  <!-- Search: <input type="text" [formControl]="filter" placeholder="filter by name"> -->
+  Search: <input type="text" [formControl]="filter" placeholder="filter by name">
   &nbsp;
 </div>
 
-@if (products$ | async; as products) {
+@if (filteredProducts$ | async; as products) {
   <ul class="products">
     @for (product of products | slice:start:end; track product.id) {
       <li
@@ -27,8 +39,6 @@
       </li>
     }
   </ul>
-} @else {
-  <div class="loading"></div>
 }
 
 <div class="right">
@@ -42,7 +52,7 @@
     < Previous Page
   </button>
   Page {{ currentPage }}
-  <button (click)="nextPage()">
+  <button (click)="nextPage()" [disabled]="(productsNb$ | async) <= end">
     Next Page >
   </button>
 </div>
